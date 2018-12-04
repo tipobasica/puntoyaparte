@@ -1,0 +1,334 @@
+/*Tipografía*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,400,400i,700,700i|Patua+One');
+
+* {
+    ¨outline: none;
+    ;
+    margin: 0;
+}
+
+/*General*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #dfe6e9;
+    font-size: 17px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2a29;
+}
+
+a:hover {
+    color: #0984e3;
+}
+
+/*Tipografía*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Patua One', serif;
+    font-weight: normal;
+    margin: 0.3em 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+
+}
+
+h4 {
+    font-size: 28px;
+
+}
+
+h5 {
+    /* "Categoría" en descripción de la sección */
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 0.7em;
+    letter-spacing: 0.15em;
+}
+
+/*Secciones*/
+main {
+    padding-bottom: 30px;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 980px;
+    padding: 15px;
+}
+
+header,
+footer {
+    background: #0984e3;
+    color: white;
+}
+
+header h1 {
+    font-size: 55px;
+    transition: 0.5s;
+    line-height: 0;
+    padding: 20px 0px 10px 0px;
+}
+
+header nav {
+    background: #74b9ff;
+    font-size: 0.9em;
+    letter-spacing: 0.15em;
+}
+
+.fa-bars {
+    font-size: 0px;
+}
+
+.fa-times {
+    position: absolute;
+    font-size: 0px;
+}
+
+.separador-movil {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav ul li:last-of-type {
+    margin-right: 0px;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .container {
+    max-width: 600px;
+}
+
+
+/*Breadcrumbs*/
+ul.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.15em;
+    margin: 15px 0;
+}
+
+ul.breadcrumbs li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+ul.breadcrumbs li a:after {
+    content: '|';
+    margin-left: 10px;
+    color: #0984e3;
+}
+
+ul.breadcrumbs li a.active {
+    color: #0984e3;
+}
+
+ul.breadcrumbs li a.active:after {
+    content: '';
+}
+
+
+/*Columnas*/
+
+.columns {
+    margin: 0 -10px;
+    max-width: 980px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.column {
+    flex: auto;
+    box-sizing: border-box;
+    width: 33.33333333333333%;
+}
+
+.ultimoM {
+    margin-right: 33.33333333333333%;
+}
+
+.ultimoA {
+    margin-right: 66.66666666666667%;
+}
+
+
+
+.polaroid {
+    background: white;
+    margin: 10px;
+    padding: 5%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    max-width: 33, 33333%;
+    min-height: 95%;
+}
+
+.autor {
+    margin-bottom: 1.5em;
+    font-style: italic;
+}
+
+.ultimoO {
+    margin-right: 33.33333333333333%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    .column {
+        width: 50%;
+    }
+
+
+    .ultimoM {
+        margin-right: 0%;
+    }
+
+    .ultimoE {
+        margin-right: 50%;
+    }
+
+    .ultimoO {
+        margin-right: 0%;
+    }
+
+    .ultimoA {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        top: 0;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-right: 0px;
+    }
+
+
+    header nav ul {
+        padding: 10px 0px;
+        ;
+    }
+
+    header nav {
+        padding-top: 30px;
+        top: 0;
+        left: -250px;
+        position: absolute;
+        width: 250px;
+        background: #74b9ff;
+        font-size: 0.9em;
+        letter-spacing: 0.15em;
+        transition: 0.5s;
+    }
+
+    .fa-bars {
+        top: 15px;
+        position: absolute;
+        font-size: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .fa-bars:hover {
+        color: black;
+    }
+
+    .fa-times {
+        top: 15px;
+        position: absolute;
+        font-size: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .fa-times:hover {
+        color: black;
+    }
+
+    .separador-movil {
+        padding: 0.5px 0;
+        margin: 10px 0px;
+        background: black;
+        display: block;
+        border-style: none;
+        opacity: 0.1;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    header h1 {
+        font-size: 25px;
+        text-align: center;
+        line-height: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .column {
+        width: 100%;
+        margin-right: 0;
+    }
+
+}

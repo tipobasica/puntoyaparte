@@ -1,0 +1,506 @@
+/*Tipografía*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,400,400i,700,700i|Patua+One');
+
+
+* {
+    /* outline: solid rgba(255,0,0,.1) 1px;*/
+    margin: 0;
+}
+
+/*General*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #dfe6e9;
+    font-size: 17px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2a29;
+}
+
+a:hover {
+    color: #0984e3;
+}
+
+/*Tipografía*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Patua One', serif;
+    font-weight: normal;
+    margin: 0.3em 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    margin: 0.5em 0em 1em 0em;
+
+}
+
+h4 {
+    font-size: 28px;
+
+}
+
+h5 {
+    /* "Categoría" en descripción de la sección */
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 0.7em;
+    letter-spacing: 0.15em;
+}
+
+/*Secciones*/
+main {
+    padding-bottom: 30px;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    padding: 15px;
+}
+
+header,
+footer {
+    background: #0984e3;
+    color: white;
+}
+
+header h1 {
+    font-size: 55px;
+    transition: 0.5s;
+    line-height: 0;
+    padding: 20px 0px 10px 0px;
+}
+
+header nav {
+    background: #74b9ff;
+    font-size: 0.9em;
+    letter-spacing: 0.15em;
+}
+
+.fa-bars {
+    font-size: 0px;
+}
+
+.fa-times {
+    position: absolute;
+    font-size: 0px;
+}
+
+.separador-movil {
+    display: none;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav ul li:last-of-type {
+    margin-right: 0px;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .container {
+    max-width: 600px;
+}
+
+/*Breadcrumbs*/
+ul.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.15em;
+    margin: 15px 0;
+}
+
+ul.breadcrumbs li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+ul.breadcrumbs li a:after {
+    content: '|';
+    margin-left: 10px;
+    color: #0984e3;
+}
+
+ul.breadcrumbs li a.active {
+    color: #0984e3;
+}
+
+ul.breadcrumbs li a.active:after {
+    content: '';
+}
+
+
+/*CONTENEDORES*/
+
+article {
+
+    background: #ffff;
+    width: 100%;
+}
+
+.separador {
+    border: solid 1px;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.texto {
+    margin-right: 13%;
+    margin-left: 19%;
+    max-width: 800px;
+    position: relative;
+}
+
+
+/*tipografías*/
+
+#titulo {
+    /*Titulo*/
+    font-family: 'Patua one';
+    font-size: 3.5em;
+    line-height: 1;
+    text-align: center;
+    color: #2d3436;
+    padding: 0.5em 0em 0em 0em;
+    z-index: -1;
+
+}
+
+h3 {
+    /*Copete*/
+    font-size: 1.1em;
+    text-align: center;
+    color: #2d3436;
+    font-weight: 400;
+    padding: 0% 5% 0% 5%;
+    max-width: 600px;
+
+}
+
+h4 {
+    /*Subtitulo dentro de texto*/
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9em;
+    word-spacing: 3px;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    float: left;
+    color: #0984e3;
+    margin: 0 24px 24px -10%;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: 'Patua One';
+    font-size: 2.7em;
+    color: #ffff;
+    text-align: left;
+    padding: 0.5em 0px 0.5em 0px;
+    margin: 0px 0px 0px 15%
+}
+
+h6 {
+    /*autor*/
+    font-size: 0.9em;
+    opacity: 0.6;
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+}
+
+
+p span {
+    font-style: bold;
+    color: #fff;
+    text-align: left
+}
+
+p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+    margin: 1.2em 0em 1.2em 0em;
+}
+
+
+e {
+    /*epígrafe*/
+    font-size: 0.8em;
+    color: white;
+    position: relative;
+    width: 95%;
+    padding-right: 5%;
+    padding-bottom: 3px;
+    margin-top: -20px;
+    text-align: right;
+    float: right;
+}
+
+/*IMAGEN*/
+img {
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: auto;
+    max-width: 800px
+}
+
+
+.fondo-epigrafe {
+    width: 100%;
+    max-width: 800px;
+    background: #0984e3;
+    position: relative;
+    margin-top: -25px;
+    border-radius: 10px;
+    opacity: 0.6;
+    height: 1.5em;
+}
+
+
+/*CITA*/
+.cita {
+    color: black;
+    border-radius: 10px;
+    font-size: 1em;
+    line-height: 24px;
+    float: right;
+    width: 40%;
+    max-width: 200px;
+    margin: 0em 0em 0em 1em;
+    border-left: 5px solid #0984e3;
+    background: #dfe6e9;
+    padding: 1em;
+    font-style: italic;
+}
+
+
+.separador-cita {
+    border: solid 0.5px;
+    color: #0984e3;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+
+.cita-movil {
+    display: none;
+    color: black;
+    border-radius: 10px;
+    font-size: 1em;
+    line-height: 24px;
+    float: right;
+    border-left: 5px solid #0984e3;
+    background: #dfe6e9;
+    padding: 1em;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+blockquote {
+    quotes: "«""»";
+}
+
+span {
+    font-style: italic;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 0.8em;
+    margin: 0.3em;
+    color: #444444;
+    float: right;
+}
+
+
+.video-container {
+    border-radius: 15px;
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.special {
+    float: none;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+@media screen and (max-width: 720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        top: 0;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+
+
+
+    header nav ul li {
+        display: block;
+        margin-right: 0px;
+    }
+
+
+    header nav ul {
+        padding: 10px 0px;
+        ;
+    }
+
+    header nav {
+        z-index: 2;
+        padding-top: 30px;
+        top: 0;
+        left: -250px;
+        position: absolute;
+        width: 250px;
+        background: #74b9ff;
+        font-size: 0.9em;
+        letter-spacing: 0.15em;
+        transition: 0.5s;
+    }
+
+    .fa-bars {
+        top: 15px;
+        position: absolute;
+        font-size: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .fa-bars:hover {
+        color: black;
+    }
+
+    .fa-times {
+        top: 15px;
+        position: absolute;
+        font-size: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .fa-times:hover {
+        color: black;
+    }
+
+    .separador-movil {
+        padding: 0.5px 0;
+        margin: 10px 0px;
+        background: black;
+        display: block;
+        border-style: none;
+        opacity: 0.1;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    header h1 {
+        font-size: 25px;
+        text-align: center;
+        line-height: 0;
+        padding: 0;
+    }
+
+    .cita-movil {
+        display: block;
+    }
+
+    .cita {
+        display: none;
+    }
+
+
+    h4 br {
+        display: none;
+    }
+
+
+    h4 {
+        /*Subtitulo dentro de texto en responsive*/
+        float: none;
+        text-align: left;
+        word-spacing: 0.1em;
+        letter-spacing: 0.02em;
+        line-height: 1.3;
+        margin: 0;
+        margin-top: 38px;
+        font-size: 18px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    .texto {
+        margin: 0 8%;
+
+        position: relative;
+    }
+
+
+}

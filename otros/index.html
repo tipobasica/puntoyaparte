@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Punto y aparte :: Otros</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+</head>
+
+<script>
+function openNav() {
+    document.getElementById("sidebar").style.left = "0";
+}
+
+function closeNav() {
+    document.getElementById("sidebar").style.left = "-250px";
+}
+</script>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Punto y aparte</h1>
+        </div>
+
+        <i id="abrir" class="fas fa-bars" onclick="openNav()"></i>
+        <nav id="sidebar">
+        <i class="fas fa-times" onclick="closeNav()"></i>
+    
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="../musica/index.html">MÚSICA</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="../literatura/index.html">LITERATURA</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="../entretenimiento/index.html">ENTRETENIMIENTO</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="../arte/index.html">ARTE</a></li>
+                    <hr class="separador-movil">
+                    <li><a class="active" href="../otros/index.html">OTROS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Contenido -->
+    <main>
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <ul class="breadcrumbs">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a class="active" href="#">Otros</a></li>
+            </ul>
+            <section class="recientes">
+                <h3>Recientes</h3>
+                <div class="columns">
+                    <div class="column caja1">
+                        <div class="polaroid">
+                            <a href="articulos/julioperez.html">
+                                <img src="images/JulioPerez.jpg">
+                            </a>
+                            <h4>
+                                <a href="articulos/julioperez.html">
+                                Julio Roque Perez
+                                </a>
+                            </h4>
+                            <p class="autor">Hoy, Julio tiene 78 años y cómo él mismo dice está “tranquilo”, hizo lo que quiso y “no se arrepiente de nada”.</p>
+                        </div>
+                    </div>
+                    <div class="column ultimoO">
+                        <div class="polaroid">
+                            <a href="articulos/antoniogaudi.html">
+                                <img src="images/antoniogaudi.jpeg">
+                            </a>
+                            <h4>
+                                <a href="articulos/antoniogaudi.html">
+                                Antonio Gaudí
+                                </a>
+                            </h4>
+                            <p class="autor">Máximo representante del modernismo</p>
+                        </div>
+                    </div>
+                  
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>
+                Punto y aparte es una página web creada por la Cátedra de Tipografía 1 Básica de la Universidad Nacional de Cuyo.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

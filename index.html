@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Punto y aparte</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+</head>
+
+<script>
+function openNav() {
+    document.getElementById("sidebar").style.left = "0";
+}
+
+function closeNav() {
+    document.getElementById("sidebar").style.left = "-250px";
+}
+</script>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Punto y aparte</h1>
+        </div>
+
+        <i id="abrir" class="fas fa-bars" onclick="openNav()"></i>
+        <nav id="sidebar">
+        <i class="fas fa-times" onclick="closeNav()"></i>
+        
+            <div class="container">
+                <ul class="menu">
+                    <li><a class="active" href="index.html">INICIO</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="musica/index.html">MÚSICA</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="literatura/index.html">LITERATURA</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="entretenimiento/index.html">ENTRETENIMIENTO</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="arte/index.html">ARTE</a></li>
+                    <hr class="separador-movil">
+                    <li><a href="otros/index.html">OTROS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Contenido -->
+    <main>
+        <div class="container">
+           
+            <!-- 3 noticias grandes -->
+            <section class="noticias">
+                <div class="columns">
+                    <div class="column novedades">
+                        <h3>Novedades</h3>
+                        <div class="polaroid">
+                            <div class="columns">
+                                <div class="column">
+                                    <a href="entretenimiento/articulos/percyjackson.html">
+                                        <img src="entretenimiento/images/Percy400px.jpg">
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <div class="content-text">
+                                    <h5><a href="entretenimiento/index.html">
+                                        Entretenimiento
+                                    </a></h5>
+                                    <h4>
+                                        <a href="entretenimiento/articulos/percyjackson.html">
+                                        Percy Jackson
+                                        </a>
+                                    </h4>
+                                    <p class="autor"> Hijo de uno de los tres grandes dioses griegos </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="polaroid">
+                            <div class="columns">
+                                <div class="column">
+                                    <a href="musica/articulos/calle13.html">
+                                        <img src="musica/images/c131.png">
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <div class="content-text">
+                                    <h5><a href="musica/index.html">
+                                        Música
+                                    </a></h5>
+                                    <h4>
+                                        <a href="musica/articulos/calle13.html">
+                                        Calle 13
+                                        </a>
+                                    </h4>
+                                    <p class="autor">Un rebelde con causa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="polaroid">
+                            <div class="columns">
+                                <div class="column">
+                                    <a href="musica/articulos/imaginedragonsa.html">
+                                        <img src="musica/images/ImagineDragons.jpg">
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <div class="content-text">
+                                    <h5><a href="musica/index.html">
+                                        Música
+                                    </a></h5>
+                                    <h4>
+                                        <a href="musica/articulos/imaginedragonsa.html">
+                                        Imagine Dragons
+                                        </a>
+                                    </h4>
+                                    <p class="autor">Un poco acerca de su historia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column leidos">
+                        <h3>Más leídos</h3>
+                        <div class="contenedor-masleido">
+                        <div class="masleido">
+                        
+                            <h4>
+                                <a href="musica/articulos/thebeatles.html">
+                                    The Beatles
+                                </a>
+                            </h4>
+                            <p class="autor">
+                                The Beatles una banda aclamada por su historia y trayectoria.
+                            </p>
+                        </div>
+                        
+                                    </div>
+                        
+                        <div class="contenedor-masleido">
+                        <div class="masleido">
+                        
+                            <h4>
+                                <a href="literatura/articulos/geraltderivia.html">
+                                    Geralt de Rivia
+                                </a>
+                            </h4>
+                            <p class="autor">
+                                Geralt de Rivia es un brujo, protagonista principal de la Saga The Witcher escrita por Andrzej Sapkowski
+                            </p>
+                        </div>
+                        
+                                    </div>
+                        <div class="contenedor-masleido">
+                        <div class="masleido">
+                        
+                            <h4>
+                                <a href="entretenimiento/articulos/waltdisney.html">
+                                    Walt Disney
+                                </a>
+                            </h4>
+                            <p class="autor">
+                                «No duermas para descansar, duerme para soñar. Porque los sueños están para cumplirse»
+                            </p>
+                        </div>
+                        
+                                    </div>
+                                    <div class="contenedor-masleido">
+                        <div class="masleido">
+                        
+                            <h4>
+                                <a href="literatura/articulos/María Elena Walsh.html">
+                                    María Elena Walsh
+                                </a>
+                            </h4>
+                            <p class="autor">
+                                Una escritora para todas las edades
+                            </p>
+                        </div>
+                        
+                                    </div>
+                                    <div class="contenedor-masleido">
+                        <div class="masleido">
+                        
+                            <h4>
+                                <a href="musica/articulos/dualipa.html">
+                                    Dua Lipa
+                                </a>
+                            </h4>
+                            <p class="autor">
+                                Cantante, modelo y compositora británica
+                            </p>
+                        </div>
+                        
+                                    </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="recientes">
+                <h3>Recientes</h3>
+                <div class="columns">
+                    <div class="column caja1">
+                        <div class="polaroidrecientes">
+                            <a href="entretenimiento/articulos/panterarosa.html">
+                                <img src="entretenimiento/images/panterarosa.png">
+                            </a>
+                            <h4>
+                                <a href="entretenimiento/articulos/panterarosa.html">
+                                La Pantera Rosa
+                                </a>
+                            </h4>
+                            <p class="autor">Uno de los personajes más famosos de la década del 2000</p>
+
+
+                        
+                        </div>
+                    </div>
+                    <div class="column caja2">
+                        <div class="polaroidrecientes">
+                            <a href="literatura/articulos/J.R.R tolkien.html">
+                                <img src="literatura/images/J.R.R tolkien.jpg">
+                            </a>
+                            <h4>
+                                <a href="literatura/articulos/J.R.R tolkien.html">
+                                J.R.R Tolkien
+                                </a>
+                            </h4>
+                            <p class="autor">Un mundo de fantasía sin limites.</p>
+
+
+                        </div>
+                    </div>
+                    <div class="column caja3">
+                        <div class="polaroidrecientes">
+                            <a href="arte/articulos/vincentvangogh.html">
+                                <img src="arte/images/vincentvangogh.jpg">
+                            </a>
+                            <h4>
+                                <a href="arte/articulos/vincentvangogh.html">
+                                Vincent Van Gogh
+                                </a>
+                            </h4>
+                            <p class="autor">El famoso pintor Holandés nacido en 1852, fué un niño difícil, sensible y nervioso.</p>
+                        </div>
+                    </div>
+                    <div class="column caja4">
+                        <div class="polaroidrecientes">
+                            <a href="literatura/articulos/Draco.html">
+                                <img src="literatura/images/draco.jpg">
+                            </a>
+                            <h4>
+                                <a href="literatura/articulos/Draco.html">
+                                Draco Malfoy
+                                </a>
+                            </h4>
+                            <p class="autor">Personaje de los libros de Harry Potter creados por la autora británica J.K. Rowling.</p>
+                        </div>
+                    </div>
+                    <div class="column caja5">
+                        <div class="polaroidrecientes">
+                            <a href="entretenimiento/articulos/hayao.html">
+                                <img src="entretenimiento/images/hayao.jpeg">
+                            </a>
+                            <h4>
+                                <a href="entretenimiento/articulos/hayao.html">
+                                Hayao Miyazaki
+                                </a>
+                            </h4>
+                            <p class="autor">La historia de un predicador poco convencional</p>
+                        </div>
+                    </div>
+                    <div class="column caja6">
+                        <div class="polaroidrecientes">
+                            <a href="musica/articulos/bestabsoluteperfect.html">
+                                <img src="musica/images/bestabsoluteperfect.jpg">
+                            </a>
+                            <h4>
+                                <a href="musica/articulos/bestabsoluteperfect.html">
+                                Best Absolute Perfect
+                                </a>
+                            </h4>
+                            <p class="autor">"Dirige tu mirada hacia el mundo áspero, enfréntalo y lucha. Aunque los altos muros traten de bloquearte, salta por encima de todo."</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>
+                Punto y aparte es una página web creada por la Cátedra de Tipografía 1 Básica de la Universidad Nacional de Cuyo.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
